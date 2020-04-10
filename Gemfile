@@ -10,6 +10,8 @@ gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.6'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+gem "factory_bot_rails"
+gem "faker"
 
 gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
