@@ -13,7 +13,7 @@ class Machine < ApplicationRecord
     snacks.count(:name)
   end
 
-  def add(snack)
+  def add_snack(snack)
     snacks << snack
   end
 end

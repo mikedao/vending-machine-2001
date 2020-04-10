@@ -17,5 +17,17 @@ RSpec.describe Machine, type: :model do
 
       expect(dons.average_price).to eq(1.25)
     end
+
+    it "#add_snack adds a snack to machine" do
+      owner = Owner.create(name: "Sam's Snacks")
+      turing = owner.machines.create(location: "Turing Basement")
+      snack_1 = Snack.create(name: "KitKat", price: 1)
+
+      expect(turing.snacks).to eq([])
+
+      turing.add_snack(snack_1)
+
+      expect(turing.snacks).to eq([snack_1])
+    end
   end
 end
