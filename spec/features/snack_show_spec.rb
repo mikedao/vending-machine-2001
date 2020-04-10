@@ -20,6 +20,7 @@ describe "snack show page" do
     # MachineSnack.create(machine_id: turing.id, snack_id: snack_4.id)
 
     visit "/snacks/#{snack_1.id}"
+    save_and_open_page
 
     expect(page).to have_content(snack_1.name)
     expect(page).to have_content(snack_1.price)
