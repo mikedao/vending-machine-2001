@@ -18,26 +18,6 @@ belongs to snacks
 on machine table need to create association
 on snacks table need to create association
 
-```
-User Story 2 of 3
-​
-As a visitor
-When I visit a vending machine show page
-I also see an average price for all of the snacks in that machine
-```
-​
-### Example
-```Don's Mixed Drinks
-Snacks
-* White Castle Burger: $3.50
-* Pop Rocks: $1.50
-* Flaming Hot Cheetos: $2.50
-Average Price: $2.50
-```
-​
-## Visiting a Snack Page
-​
-### Story
 ​
 ```
 User Story 3 of 3
