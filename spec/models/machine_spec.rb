@@ -22,7 +22,10 @@ RSpec.describe Machine, type: :model do
       snack4 = create(:snack, price: 6.33)
 
       dons.snacks << [snack1, snack2, snack3, snack4]
+
+
       expect(dons.average_snack_price.to_i).to eq(5)
+      expect(dons.snack_counter).to eq(4)  
     end
   end
 end
