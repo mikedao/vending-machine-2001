@@ -6,36 +6,6 @@ Vending machines may be stocked with different snacks, and the same snack may be
 ​
 ## Be sure to read all user stories BEFORE beginning your work
 ​
-## Setup
-​
-- Fork and clone this repo
-- Perform the usual setup steps after cloning a Rails application
-​
-## Submission
-​
-- Create a PR from your repo back the the turingschool-examples repo
-- Name the PR with *your* name!
-​
-## Requirements
-​
-- TDD all new work; you may postpone model tests for attribute validations only
-​
-## Not Required
-​
-- No form input is required
-- No visual styling is required
-​
-​
-## User Stories
-​
-```
-User Story 1 of 3
-​
-As a visitor
-When I visit a vending machine show page
-I see the name of all of the snacks associated with that vending machine along with their price
-```
-​
 Snacks table
   name
   price
@@ -45,9 +15,8 @@ MachineSnacks joins table
 belongs to machine
 belongs to snacks
 
-
 on machine table need to create association
-on snacks table need to create association 
+on snacks table need to create association
 
 ```
 User Story 2 of 3
