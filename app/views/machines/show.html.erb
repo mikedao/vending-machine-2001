@@ -3,3 +3,5 @@
 <% @machine.snacks.each do |snack| %>
   <%= "#{snack.name} - $#{snack.price}" %>
 <% end %>
+
+Average Price: $<%= @machine.average_price.round(2) %>
