@@ -14,5 +14,7 @@ describe "vending machine show page" do
     expect(page).to have_content("#{snack_2.name} - $#{snack_2.price}")
     expect(page).to have_content("#{snack_3.name} - $#{snack_3.price}")
 
+    expect(page).to have_content("Average Price: $1.5")
+
   end
 end
