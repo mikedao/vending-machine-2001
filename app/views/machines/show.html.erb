@@ -2,7 +2,7 @@
 
 <h3>Snacks</h3>
 <% @machine.snacks.each do |snack| %>
-  <%= "#{snack.name} - $#{snack.price}" %>
+  <%= "#{snack.name} - $#{'%.2f' % snack.price}" %>
 <% end %>
 
 Average Price: $<%= @machine.average_price.round(2) %>
