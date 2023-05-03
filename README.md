@@ -1,18 +1,34 @@
 # Vending Machine Tracker
-​
+
 We're developing an application to track vending machines across the city. This will test your ability to set up and test many-to-many relationships and access attributes and methods through those relationships.
-​
-Vending machines may be stocked with different snacks, and the same snack may be available at many different places throughout the city. Before you begin: what does that mean, "the relationship is between vending machines and snacks"? How many snacks does a vending machine have? How many vending machines can a snack be in?
+Vending machines may be stocked with different snacks, and the same snack may be available at many different places throughout the city. 
 
 
-​
-## Be sure to read all user stories BEFORE beginning your work
+Before you begin: what does it mean to say that "the relationship is between vending machines and snacks"? How many snacks does a vending machine have? How many vending machines can a snack be in?
+
+To help you understand these relationships, complete this paragraph: 
+
+```
+Owners have many Vending Machines, and
+Vending Machines belong to one _______. 
+Vending Machines have many Snacks, and
+Snacks _______ Vending Machines. 
+Snacks and Vending Machines are related through a table called ________. 
+```
+
 
 ## Setup
 
 - Fork and clone this repo
 - Perform the usual setup steps after cloning a Rails application
+```
+bundle install
+rails db:{drop,create,migrate,seed}
+```
+When you run `bundle exec rspec`, you should have 7 passing tests to start. 
 
+### Note!
+**Note:** For this exericse, we have provided some routes and starting controller actions. Feel free to remove/comment them out if you want to practice creating them on your own. 
 
 
 ## Requirements
