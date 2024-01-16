@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "When a user visits the owners index", type: :feature do
   scenario "they see a list of owners" do
